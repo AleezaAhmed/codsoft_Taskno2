@@ -1,0 +1,585 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poopins", sans-serif;
+}
+
+a, a:hover{
+text-decoration: none;
+}
+
+.topnav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #ef4b3f;
+}
+
+.topnav-bar span{
+    color:#fff;
+}
+
+.topnav-bar li{
+    margin:0px 5px;
+}
+.topnav-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.topnav-bar a{
+    color:#fff
+}
+
+.topnav-bar a:hover{
+    color:#222
+}
+
+nav{
+  background: #222;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+nav a{
+    color:#fff;
+}
+
+nav a:hover{
+    color:#ef4b3f;
+}
+.li,a{
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+}
+button{
+    padding:9px 25px;
+    background-color: #ef4b3f;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.banner .content .button {
+    background-color:#ef4b3f;
+    color:black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .content .button:hover {
+    background-color:#c62828;
+}
+.logo{
+    flex: 1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.logo a:hover{
+    color:#fff;
+}
+
+.logo img{
+    width:50px;
+    margin-right:10px;
+}
+.search-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-input{
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style:none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+section{
+    padding: 2rem 9%;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/bg.jpg)no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+ 
+.banner .content {
+   max-width:40rem;
+   position: absolute;
+   
+}
+
+.banner .content h3{
+    font-size: 3.8rem;
+    color:#fff;
+    
+    padding:0.5rem 0;
+    line-height: 1.5;
+}
+
+.banner .content span{
+    font-size: 2rem;
+    color:#ef4b3f;
+    padding:0.5rem 0;
+    line-height: 1.5;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#222;
+    padding: 1rem;
+    margin:2rem 0;
+    background: rgba(255, 51 153, .05);
+}
+.heading span {
+    color: #ef4b3f;
+}.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the content */
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .content {
+    flex: 0 0 100%; /* Take up full width */
+    text-align: center; /* Center align the content */
+}
+
+
+
+.about h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  
+  .about h3:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+  }
+  
+  .about h3:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+  }
+  .about p {
+    line-height: 1.66em;
+    margin: 0;
+    font-family: 'Lato';
+    font-size: 24px;
+ }
+
+ .about .button {
+    border-radius: 20px; 
+}
+
+.icon-container {
+    background: linear-gradient(to bottom, #ef4b3f, #f0f0f0); /* Gradient background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 3rem; /* Adjusted padding */
+    justify-content: center; /* Center-align icon containers */
+}
+
+.icon-container .icons {
+    background: #ffffff;
+    border: 1px solid #e0e0e0; /* Light border */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 calc(25% - 1.5rem);
+    max-width: calc(25% - 1.5rem);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.icon-container .icons img {
+    height: 5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.icon-container .icons h3 {
+    color: #333333; /* Darker text color */
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.icon-container .icons span {
+    color: #666666; /* Slightly darker text color */
+    font-size: 1.2rem; /* Reduced font size for the span */
+    transition: all 0.3s ease;
+}
+
+.icon-container .icons:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+}
+
+.icon-container .icons:hover img {
+    transform: scale(1.1);
+}
+
+.icon-container .icons:hover h3 {
+    color: #ff5722; /* Accent color on hover */
+}
+
+
+.button{
+    display:inline-block;
+    margin-top: 0.5rem;
+    background:#222;
+    color:#fff;
+    padding:9px 25px;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.button:hover{
+    background: #ef4b3f;
+
+}
+sericies  
+.services-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services-section .header {
+    margin-bottom: 50px;
+}
+
+.services-section .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.services-section .box {
+    flex: 1 0 30%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.services-section .box:hover {
+    transform: translateY(-5px);
+}
+
+.services-section .box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.services-section .box .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.services-section .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.services-section .box .icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.services-section .box .icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ef4b3f;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.services-section .box .icons a:hover {
+    background-color: #c62828;
+}
+.services-section .box:hover .icons {
+    top: auto;
+    bottom: 0;
+}
+
+.services-section .box .content {
+    padding: 20px;
+}
+
+.services-section .box .content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-section .box .content p {
+    font-size: 16px;
+}
+
+  
+  .contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row .form-box {
+    flex: 1 1 calc(50% - 1.5rem); /* Adjusted width for the form */
+    padding: 2rem;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 0.5rem;
+}
+
+.contact .row .image {
+    flex: 1 1 calc(50% - 1.5rem); /* Adjusted width for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .row img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.contact .row .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin: 0.7rem 0;
+}
+
+.contact .row .box:focus {
+    border-color: #ef4b3f;
+}
+
+.contact .row textarea {
+    height: 15rem;
+    resize: none;
+}
+
+/* Additional styles */
+.contact .row .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #ef4b3f;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact .row .btn:hover {
+    background-color: #d13c31;
+}
+
+
+
+  .footer {
+    background-color: #222; /* Set background color to #222 */
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #222;
+}
+
+.footer .box {
+    flex: 1 1 25%;
+    max-width: 25%;
+    background: #222; /* Match the background color of the footer */
+}
+
+.footer .box h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box a {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    display: block; /* Set to display block */
+}
+
+.footer .box a:hover {
+    color: #ef4b3f;
+    text-decoration: underline;
+}
+
+.footer .box img {
+    margin-top: 1rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff; /* Change text color to white */
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.footer .credit span {
+    color: #ef4b3f;
+}
+
+.footer .box a{
+    font-size: small;
+}
+.footer .box h3 {
+    font-size: 1.8rem; /* Decreased font size */
+    margin: 0; /* Remove default margins */
+}
+
+.footer .box a {
+    padding: 0.5rem 0; /* Adjusted padding */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer .box a:hover {
+    color: #ef4b3f; /* Change color on hover */
+}
+
+.footer .credit {
+    font-size: 1.6rem; /* Decreased font size */
+    padding: 1.5rem; /* Adjusted padding */
+    margin-top: 1.5rem;
+    color: #555; /* Darkened color */
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.footer .credit span {
+    color: #ef4b3f; /* Highlight color */
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top:15px;
+        display:none;
+    }
+    .menu .active,.toggle{
+        display: block;
+    }
+    .toggle{
+        position:absolute;
+        top:15px;
+        right:20px;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .icon-container .icons h3{
+      
+        font-size: 2rem;
+    }.icon-container .icons span{
+        font-size: 1.7rem;
+   
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
